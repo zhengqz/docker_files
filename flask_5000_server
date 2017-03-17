@@ -5,7 +5,7 @@ RUN apt-get install -y --force-yes python python-dev python-setuptools software-
 RUN apt-get clean all
 
 RUN pip install flask
-ADD service.py /tmp/server.py
+ADD server.py /tmp/server.py
 
 #FLASK PORT
 EXPOSE 5000
